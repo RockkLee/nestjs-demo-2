@@ -17,11 +17,12 @@ export class UserController {
     return `User ${user.name} created with ID ${user.id}`;
   }
 
-  @Put(':id')
+  @Put()
   async updateUser(
     @Body() userReq: UserReq,
-  ): Promise<void> {
-    await this.userAppService.updateUser(userReq.id, userReq.email, userReq.email);
+  ): Promise<string> {
+    await this.userAppService.updateUser(userReq.id, userReq.name, userReq.email);
+    return `User ${userReq.id} updated`;
   }
 
   @Get(':id')

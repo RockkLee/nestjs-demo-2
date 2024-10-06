@@ -4,8 +4,8 @@
   "compilerOptions": {
     "paths": {
       "@infra/*": ["./*"],
-      "@app/*": ["../../app/dist/*"],
-      "@domain/*": ["../../domain/dist/*"]
+      "@app/*": ["../../app/src/*"],
+      "@domain/*": ["../../domain/src/*"]
     },
   },
 }

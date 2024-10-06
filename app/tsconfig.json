@@ -18,11 +18,11 @@
     },
     ///////////////////////////////
     "noEmit": false, // Enable/Disable code emission, i.e., allows TypeScript to generate output files
-    "strictNullChecks": false, // Enable/Disable strict null checks
-    "noImplicitAny": false, // Enable/Disable error reporting for variables typed as `any`
-    "strictBindCallApply": false, // Enable/Disable strict checking of function arguments, i.e., `bind`, `call`, and `apply`
-    "forceConsistentCasingInFileNames": false, // Enable/Disable consistent casing of filenames between imports and file system
-    "noFallthroughCasesInSwitch": false 
+    // "strictNullChecks": false, // Enable/Disable strict null checks
+    // "noImplicitAny": false, // Enable/Disable error reporting for variables typed as `any`
+    // "strictBindCallApply": false, // Enable/Disable strict checking of function arguments, i.e., `bind`, `call`, and `apply`
+    // "forceConsistentCasingInFileNames": false, // Enable/Disable consistent casing of filenames between imports and file system
+    // "noFallthroughCasesInSwitch": false 
   },
   "include": ["src/**/*"],
   "references": [
