@@ -43,6 +43,8 @@ export class UserAppSvc {
   public async getUser(userId: string): Promise<User | null> {
     this.userDomainSvc.getUser();
     const user = await this.userRepo.findById(userId);
+    if (!user)
+      throw new Error('User not found');
     return user;
   }
 }

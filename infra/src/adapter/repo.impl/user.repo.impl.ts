@@ -45,7 +45,7 @@ export class UserRepoImpl implements UserRepo {
   async findById(id: string): Promise<User | null> {
     const userPo = await this.userOrmRepo.findOne({ where: { id } });
     if (!userPo) 
-      return null;
+      return undefined;
 
     return UserMapper.fromUserPo(userPo);
   }
